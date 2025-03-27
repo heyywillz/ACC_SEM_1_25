@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(14, 86%, 42%);
+  --Green: hsl(159, 69%, 38%);
+  --Rose-50: hsl(20, 50%, 98%);
+  --Rose-100: hsl(13, 31%, 94%);
+  --Rose-300: hsl(14, 25%, 72%);
+  --Rose-400: hsl(7, 20%, 60%);
+  --Rose-500: hsl(12, 20%, 44%);
+  --Rose-900: hsl(14, 65%, 9%);
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--Rose-100);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 48px;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.product-card button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--Rose-500);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: -1rem;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  color: var(--Red);
+}
+
+.product-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.product-text {
+  margin: 1.5rem 0 0.8rem  0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-text h5 {
+  color: var(--Red);
+  font-size: 16px;
+  border: var(--Red);
+}
+
+.product-text p {
+  color: var(--Rose-400);
+}
+
+.product-container {
+  width: 60%;
+}
+
+.product-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.product-cart {
+  width: 35%;
+}
+
+.cart-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.cart-card h3 {
+  color: var(--Red);
+}
+
+.cart-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.product-cart p {
+  text-align: center;
+  color: var(--Rose-900);
+  font-weight: 500;
+}
+
+@media(max-width: 800px){
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-container {
+        width: 100%;
+        display: block;
+    }
+
+    .product-list {
+        justify-content: center;
+    }
+
+    .product-cart {
+        width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+}
