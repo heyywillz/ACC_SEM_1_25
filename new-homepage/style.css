@@ -221,10 +221,25 @@ hr {
 @media (max-width: 600px) {
   .toggle-btn {
     display: flex;
+    position: relative;
+    z-index: 999;
   }
 
   .nav-links {
-    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 10rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    right: 0;
   }
 
   nav {
