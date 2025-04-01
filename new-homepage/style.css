@@ -219,6 +219,10 @@ hr {
 }
 
 @media (max-width: 600px) {
+
+  body.shade {
+    background-color: #000000a6;
+  }
   .toggle-btn {
     display: flex;
     position: relative;
